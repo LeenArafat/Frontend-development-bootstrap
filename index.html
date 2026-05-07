@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!--Local CSS-->
+    <link href="style.css" rel="stylesheet">
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <!--Icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <title>SoftSkin</title>
+</head>
+
+<body>
+
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark pt-3" style="background-color: #8fa63c;">
+        <div class="container">
+            <a class="navbar-brand me-lg-5" href="#">SoftSkin</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"> <a class="nav-link " href="#">Learn</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="#">Explore</a> </li>
+                    <li class="nav-item"> <a class="nav-link ">Contact</a> </li>
+                </ul>
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+                    <li class="nav-item"> <a class="nav-link"> <i class="fa-solid fa-cart-shopping"></i> Cart</a></li>
+                    <li class="nav-item"> <a class="nav-link"> <i class="fa-solid fa-earth-americas"></i> EN</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Logged in as Samer
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">my cart</a></li>
+                            <li><a class="dropdown-item" href="#">Change user</a></li>
+                            <li><a class="dropdown-item" href="#">Log out</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <!--Hero-->
+    <div style="background-image: url(assets/BANNER1.JPG); height:740px; width: 100%;">
+        <div class="row pt-5">
+            <div class=" col-md-6 col-sm-12"></div>
+            <div class="col-md-6 col-sm-12 mt-5 d-flex flex-column justify-content-center align-items-start">
+                <h1 class="mb-4">Learn. Improve. Grow</h1>
+                <p class="lead"> Build your skills through job-ready programs and earn </p>
+                <p class="lead"> your certification to propel your career. </p>
+            </div>
+        </div>
+    </div>
+
+    <!--Search box-->
+    <div class="search-container pb-5 pt-5 text-center">
+        <h1 class="mb-5">Explore our courses catalogue</h1>
+        <div class="position-relative mx-auto" style="max-width: 800px">
+            <input type="search" class="form-control rounded-4 py-3 ps-4 shadow border-0 custom-search"
+                placeholder="Search course catalog" />
+            <button
+                class="btn position-absolute end-0 top-50 translate-middle-y me-3 border-0 bg-transparent text-secondary">
+                <i class="fa-solid fa-magnifying-glass fs-4"></i>
+            </button>
+        </div>
+    </div>
+    <hr class="border-5 border-dark border-opacity-25">
+    <!--Buttons-->
+    <div class="container">
+        <div class="row">
+            <div class=" col-md-3 col-sm-12"> </div>
+            <div class=" col-md-6 col-sm-12 mb-3">
+                <button type="button" class="btn mybtn"> Recent Courses </button>
+                <button type="button" class="btn mybtn"> Featured category </button>
+                <button type="button" class="btn mybtn"> Recent Courses </button>
+            </div>
+            <div class=" col-md-3 col-sm-12"></div>
+        </div>
+    </div>
+
+    <!--Paragraph-->
+    <div class="container mb-5">
+        <div class="row">
+            <h4
+                class=" col-md-2 col-sm-12 d-flex align-items-center fw-bolder text-end border-end border-5 border-dark border-opacity-10 pe-4">
+                Recent Courses </h4> <!--fw = font-weight -->
+            <div class=" col-md-7 col-sm-12 ps-4">
+                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vehicula nunc in neque sollicitudin, ac
+                    cursus tellus semper. Morbi posuere elit mollis erat gravida rhoncus.</p>
+            </div>
+            <div class=" col-md-3 col-sm-12 d-flex justify-content-center">
+                <button type="button" class="btn mysecondbtn">View all courses </button>
+            </div>
+        </div>
+    </div>
+
+        <!--Cards-->
+        <div class="container mb-5">
+            <div class="row g-4"> <!--this g-4 sets the margin for cards-->
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="card course-card shadow">
+                        <img src="assets/card1 (1).png" class="card-img-top" alt="image">
+                        <div class="card-body d-flex flex-column">
+                            <div class="d-flex align-items-center mb-2">
+                                <img src="assets/success_story_icon1__.png" class="rounded-circle me-2" width="30"
+                                    height="30" alt="Instructor">
+                                <div>
+                                    <small class="text-muted">Instructor</small>
+                                    <h6 class="fw-bold">Dr. Harald Helfeger</h6>
+                                </div>
+                            </div>
+                            <h6 class="card-title fw-bold">Effective use and understanding of clinical...</h6>
+                            <p class="text-muted ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+                                dapibus iaculis sagittis</p>
+                            <button class="btn btn-outline-success" style="width: 10rem; align-self: center;">Course
+                                details <i class="bi bi-arrow-right-circle-fill"></i> </button>
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-md-3 col-sm-12">
+                    <div class="card course-card shadow">
+                        <img src="assets/card1 (2).png" class="card-img-top" alt="image">
+                        <div class="card-body d-flex flex-column">
+                            <div class="d-flex align-items-center mb-2">
+                                <img src="assets/success_story_icon1__.png" class="rounded-circle me-2" width="30"
+                                    height="30" alt="Instructor">
+                                <div>
+                                    <small class="text-muted">Instructor</small>
+                                    <h6 class="fw-bold">Dr. Harald Helfeger</h6>
+                                </div>
+                            </div>
+                            <h6 class="card-title fw-bold">Effective use and understanding of clinical...</h6>
+                            <div class="d-flex justify-content-between align-items-end mb-3">
+                                <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+                                    dapibus iaculis sagittis</p>
+                                <span class="fw-bold fs-5">299$</span>
+                            </div>
+                            <button class="btn btn-outline-success" style="width: 10rem; align-self: center;">Course
+                                details <i class="bi bi-arrow-right-circle-fill"></i> </button>
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-md-3 col-sm-12">
+                    <div class="card course-card shadow">
+                        <img src="assets/card1 (3).png" class="card-img-top" alt="image">
+                        <div class="card-body d-flex flex-column">
+                            <div class="d-flex align-items-center mb-2">
+                                <img src="assets/success_story_icon1__.png" class="rounded-circle me-2" width="30"
+                                    height="30" alt="Instructor">
+                                <div>
+                                    <small class="text-muted">Instructor</small>
+                                    <h6 class="fw-bold">Dr. Harald Helfeger</h6>
+                                </div>
+                            </div>
+                            <h6 class="card-title fw-bold">Effective use and understanding of clinical...</h6>
+                            <div class="d-flex justify-content-between align-items-end mb-3">
+                                <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+                                    dapibus iaculis sagittis</p>
+                                <span class="fw-bold fs-5">149$</span>
+                            </div>
+                            <button class="btn btn-outline-success" style="width: 10rem; align-self: center;">Course
+                                details <i class="bi bi-arrow-right-circle-fill"></i> </button>
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-md-3 col-sm-12">
+                    <div class="card course-card shadow">
+                        <img src="assets/card1 (4).png" class="card-img-top" alt="image">
+                        <div class="card-body d-flex flex-column">
+                            <div class="d-flex align-items-center mb-2">
+                                <img src="assets/success_story_icon1__.png" class="rounded-circle me-2" width="30"
+                                    height="30" alt="Instructor">
+                                <div>
+                                    <small class="text-muted">Instructor</small>
+                                    <h6 class="fw-bold">Dr. Harald Helfeger</h6>
+                                </div>
+                            </div>
+                            <h6 class="card-title fw-bold">Effective use and understanding of clinical...</h6>
+                            <div class="d-flex justify-content-between align-items-end mb-3">
+                                <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+                                    dapibus iaculis sagittis</p>
+                                <span class="fw-bold fs-5">149$</span>
+                            </div>
+                            <button class="btn btn-outline-success" style="width: 10rem; align-self: center;">Course
+                                details <i class="bi bi-arrow-right-circle-fill"></i> </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!--Second Hero-->
+    <div style="background-image: url(assets/soap_flavours.jpg); padding-top:7rem; padding-bottom: 30rem;">
+        <div class="container">
+            <div class="row">
+                <div class=" col-md-6 col-sm-12">
+                    <h1>Beauty products of your own!</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore
+                        et dolore magna aliqua.</p>
+                </div>
+                <ul class="col-md-3 col-sm-12 ">
+                    <li class="d-flex">
+                        <i class="bi bi-check2-circle me-2 fs-4" style="color:#8CB53E;"></i>
+                        <p class="fw-light fs-5">Pellentesque suscipit justo quis</p> <!--font-weight + font-size -->
+                    </li>
+                    <li class="d-flex">
+                        <i class="bi bi-check2-circle me-2 fs-4" style="color:#8CB53E;"></i>
+                        <p class="fw-light fs-5"> Curabitur ac odio lacus </p>
+                    </li>
+                    <li class="d-flex">
+                        <i class="bi bi-check2-circle me-2 fs-4" style="color:#8CB53E;"></i>
+                        <p class="fw-light fs-5">Nulla ligula metus, maximus</p>
+                    </li>
+                </ul>
+                <ul class="col-md-3 col-sm-12 text-center">
+                    <li class="d-flex">
+                        <i class="bi bi-check2-circle me-2 fs-4" style="color:#8CB53E;"></i>
+                        <p class="fw-light fs-5"> incididunt ut labore et</p>
+                    </li>
+                    <li class="d-flex">
+                        <i class="bi bi-check2-circle me-2 fs-4" style="color:#8CB53E;"></i>
+                        <p class="fw-light fs-5"> Nulla ligula metus, maximus</p>
+                    </li>
+                    <li class="d-flex">
+                        <i class="bi bi-check2-circle me-2 fs-4" style="color:#8CB53E;"></i>
+                        <p class="fw-light fs-5"> Nulla ligula metus, maximus</p>
+                    </li>
+                    <button class="mythirdbtn mt-3">Read more</button>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <!--Experience-->
+    <div class="text-center pb-5" style="background-color: #F5F7EC">
+
+        <div class="row mb-5">
+            <div class="col-12 col-md-5 d-flex justify-content-center align-items-center"> <!--Rule: mobile first-->
+                <img src="assets/10years.png" alt="image" style="width: 300px; height: 300px;">
+            </div>
+            <div class="col-12 col-md-2 d-flex flex-column align-items-center">
+                <div class="mt-3">
+                    <div class="d-flex"><img src="assets/leaf.png" alt="image">
+                        <h1 class="fw-bold ms-3">2K</h1>
+                    </div>
+                    <p class="ms-5 fs-5">New products</p>
+                </div>
+                <div class="mt-3">
+                    <div class="d-flex"><img src="assets/leaf.png" alt="image">
+                        <h1 class="fw-bold ms-3">100K</h1>
+                    </div>
+                    <p class="ms-5 fs-5">Students</p>
+                </div>
+                <div class="mt-3">
+                    <div class="d-flex"><img src="assets/leaf.png" alt="image">
+                        <h1 class="fw-bold ms-3">10K</h1>
+                    </div>
+                    <p class="ms-5 fs-5">Students</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 d-flex flex-column justify-content-center align-items-center text-start p-5">
+                <h1 class="fw-light" style="color:#c0c69b;">Impressive track record</h1>
+                <p style="color: gray;"> Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit, sed do eiusmod tempor incididunt ut labore et
+                    dolore magna aliqua.</p>
+            </div>
+        </div>
+        <!--Success stories-->
+        <p class="fs-1 fw-light">Softina Success Stories</p>
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-12 col-md-3 d-flex">
+                    <img src="assets/success_story_icon1__.png" alt="image"
+                        class="rounded-circle border border-5 border-white shadow" style="width: 280px; height: 280px;">
+                </div>
+                <div class="col-12 col-md-3">
+                    <div class="text-start d-flex flex-column align-items-start justify-content-center">
+                        <p class="fs-4"> Success Story Title </p>
+                        <p style="color: gray;"> Lorem ipsum dolor sit amet, consec-tetur adipiscing elit, sed do
+                            eiusmod tempor incididunt ut labore
+                            et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra
+                            maecenas ac-cumsan lacus vel facilisis.
+                        </p>
+                        <a href="#" style="color: gray; align-self: flex-end;">read more </a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3 d-flex">
+                    <img src="assets/success_story_icon1__.png" alt="image"
+                        class="rounded-circle border border-5 border-white shadow" style="width: 280px; height: 280px;">
+                </div>
+                <div class="col-12 col-md-3">
+                    <div class="text-start d-flex flex-column align-items-start justify-content-center">
+                        <p class="fs-4"> Success Story Title </p>
+                        <p style="color: gray;"> Lorem ipsum dolor sit amet, consec-tetur adipiscing elit, sed do
+                            eiusmod tempor incididunt ut labore
+                            et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra
+                            maecenas ac-cumsan lacus vel facilisis.
+                        </p>
+                        <a href="#" style="color: gray; align-self: flex-end;">read more </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Get in touch-->
+    <div class="container pt-5">
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <p class="fs-3 mt-5">Get in touch</p>
+                <p class="fs-4 fw-light"> Lorem ipsum dolor sit amet, consec-tetur adipiscing elit, sed do eiusmod
+                    tempor
+                    incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo
+                    viverra maecenas ac-cumsan lacus vel facilisis.
+                </p>
+                <h4 class="fw-bold pt-2">Address</h4>
+                <p class="fs-5 fw-light">
+                    Some Straße <br>
+                    Munchen, 11230 <br>
+                    Germany</p>
+                <h4 class="fw-bold pt-2">Phone</h4>
+                <p class="fs-5 fw-light">800-123-4567, <br>
+                    Fax: 718-724-3312</p>
+            </div>
+            <!--Bootstrap Form-->
+            <div class="col-12 col-md-6 d-flex flex-column justify-content-center">
+                <form class="m-5">
+                    <div class="mb-3">
+                        <input type="text" class="form-control shadow" placeholder="Enter your name"
+                            style="height: 50px;">
+                    </div>
+                    <div class="mb-3">
+                        <input type="email" class="form-control shadow" placeholder="Your email address"
+                            style="height: 50px;">
+                    </div>
+                    <div class="mb-3">
+                        <textarea class="form-control mt-4 shadow" placeholder="Comments" rows="7"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary mt-4" style="width: 130px;">Send</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <img src="assets/dot_media.png" alt="image" class="img-fluid mt-5">
+    <!--img-fluid is used to make the image suitable to all screens-->
+
+    <footer class="footer p-5" style="background-color: #8FA03A;">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 col-md-3">
+                    <p class="fs-5" style="color: white;">SOCIÉTÉ </p>
+                    <p class="fw-light" style="color: #e8efc8;">
+                        Contact <br>
+                        Presse <br>
+                        Recrutements <br>
+                        English</p>
+                </div>
+                <div class="col-6 col-md-3">
+                    <p class="fs-5" style="color: white;">Solutions </p>
+                    <p class="fw-light" style="color: #e8efc8;">
+                        Plateformes d'apprentissage <br>
+                        Fonctionnalités <br>
+                        Mask
+                    </p>
+                </div>
+                <div class="col-6 col-md-3">
+                    <p class="fs-5" style="color: white;">Offers </p>
+                    <p class="fw-light" style="color: #e8efc8;">
+                        Académiques <br>
+                        Organismes de formations <br>
+                        Entreprise</p>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class=" d-flex">
+                        <p style="color: #e8efc8;">
+                            powered by <br>
+                            <span style="color: white;">trainer</span> zone <br>
+                            training platform <br>
+                        </p>
+                        <p class="fs-3 m-3" style="color: white;">Softína</p>
+                    </div>
+                    <div class=" d-flex">
+                        <a href="https://twitter.com" style="color: white;"> <i class="fa-brands fa-twitter p-2"></i>
+                        </a>
+                        <a href="https://instagram.com" style="color: white;"> <i
+                                class="fa-brands fa-instagram p-2"></i> </a>
+                        <a href="https://youtube.com" style="color: white;"> <i class="fa-brands fa-youtube p-2"></i>
+                        </a>
+                        <a href="https://facebook.com" style="color: white;"> <i class="fa-brands fa-facebook p-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row p-5" style="color: #e8efc8;">
+                <div class="col-12 col-md-5 ms-auto text-md-end fw-light">Copyright<i
+                        class="bi bi-c-circle m-1"></i>2022</div>
+                <div class="col-12 col-md-3 fw-light">All rights reserved. Worldwide.</div>
+                <div class="col-12 col-md-4" style="color: white;"> Contact us | Sitemap | Legal disclaimer </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

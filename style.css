@@ -1,0 +1,69 @@
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+.card {
+    -webkit-box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.17);
+    box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.17);
+    border-radius: 15px;
+    height: 480px;
+    overflow: hidden;   /*since the cards have image in the top, the border-radius effect won't appear without this line*/
+}
+
+.btn { border-radius: 20px; }
+
+.btn-primary {
+    background-color: #8fa03a;
+    border-color: #93a353;
+}
+
+.btn:hover {
+    background-color: #a3b366;
+    border-color: #93a353;
+}
+
+.mybtn {
+    width: 10rem;
+    border-radius: 15px;
+    color: white;
+    background-color: #a3b366;
+    border-color: #93a353;
+    margin: 1rem;
+}
+
+.mybtn:hover {
+    color: black;
+    background-color: white;
+    border-color: #93a353;
+}
+
+.mysecondbtn {
+    width: 10rem;
+    border-radius: 20px;
+    height: 2rem;
+    color: black;
+    background-color: white;
+    border-color: #93a353;
+}
+
+.mysecondbtn:hover {
+    color: white;
+    background-color: #a3b366;
+    border-color: #93a353;
+}
+
+.mythirdbtn{
+    color: white;
+    background-color: rgb(112, 107, 107);
+    border-color: rgb(112, 107, 107);
+    border-radius: 10px;
+    width: 120px;
+}
+
+.form-control {
+    border-radius: 0px;
+    border-color: white;
+}
